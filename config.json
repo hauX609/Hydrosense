@@ -1,0 +1,35 @@
+{
+    "data_paths": {
+        "raw": "data/raw",
+        "interim": "data/interim",
+        "processed": "data/processed"
+    },
+    "output_paths": {
+        "final_dataset": "data/processed/final_model_data.nc",
+        "scalers": "data/processed/data_scalers.joblib",
+        "model": "data/processed/flood_convlstm_model.keras",
+        "log_dir": "logs/fit"
+    },
+    "model_params": {
+        "sequence_length": 10,
+        "batch_size": 16,
+        "epochs": 50,
+        "learning_rate": 0.0001,
+        "focal_loss_alpha": 0.75,
+        "focal_loss_gamma": 2.0
+    },
+    "data_params": {
+        "train_start_date": "2021-01-01",
+        "train_end_date": "2022-12-31",
+        "val_start_date": "2023-01-01",
+        "val_end_date": "2023-06-30",
+        "test_start_date": "2023-07-01",
+        "test_end_date": "2023-12-31",
+        "downsample_factor": 2
+    },
+    "feature_vars": {
+        "static": ["elevation", "slope", "land_cover"],
+        "dynamic": ["precip", "precip_lag_1d", "precip_roll_7d", "river_discharge"]
+    },
+    "target_var": "is_flooded"
+}

@@ -1,0 +1,17 @@
+{
+  "feature_names": [
+    "lat",
+    "lon",
+    "date",
+    "elevation",
+    "slope",
+    "landcover",
+    "precip_1d",
+    "precip_3d",
+    "precip_7d",
+    "precip_14d",
+    "dis_last",
+    "dis_trend_3",
+    "dayofyear"
+  ]
+}

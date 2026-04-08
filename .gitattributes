@@ -1,0 +1,12 @@
+data/processed/target_variable.nc filter=lfs diff=lfs merge=lfs -text
+data/raw/landcover.tif filter=lfs diff=lfs merge=lfs -text
+collection/worldcover/bgd_adm_bbs_20201113.shp filter=lfs diff=lfs merge=lfs -text
+collection/worldcover/ESA_WORLDCOVER_10M_2021_V200/ESA_WorldCover_10m_2021_v200_N21E090_Map.tif filter=lfs diff=lfs merge=lfs -text
+collection/worldcover/MAP/ESA_WorldCover_10m_2021_v200_N22E090_Map.tif filter=lfs diff=lfs merge=lfs -text
+data/raw/srtm_dem_30m.tif filter=lfs diff=lfs merge=lfs -text
+collection/dem_srtm/n20_e092_1arc_v3.bil filter=lfs diff=lfs merge=lfs -text
+collection/worldcover/bgd_adm_bbs_20201113_SHP/bgd_admbnda_adm4_bbs_20201113.shp filter=lfs diff=lfs merge=lfs -text
+collection/worldcover/bgd_adm_bbs_20201113_SHP/bgd_admbndl_admALL_bbs_itos_20201113.shp filter=lfs diff=lfs merge=lfs -text
+collection/worldcover/ESA_WORLDCOVER_10M_2021_V200/ESA_WorldCover_10m_2021_v200_N21E087_Map.tif filter=lfs diff=lfs merge=lfs -text
+collection/worldcover/ESA_WORLDCOVER_10M_2021_V200/ESA_WorldCover_10m_2021_v200_N24E087_Map.tif filter=lfs diff=lfs merge=lfs -text
+collection/worldcover/ESA_WORLDCOVER_10M_2021_V200/ESA_WorldCover_10m_2021_v200_N24E090_Map.tif filter=lfs diff=lfs merge=lfs -text

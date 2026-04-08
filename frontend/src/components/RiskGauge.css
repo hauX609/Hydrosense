@@ -1,0 +1,44 @@
+.risk-gauge {
+    position: relative;
+    margin: var(--spacing-lg) 0;
+    animation: fadeIn 0.6s ease-out 0.4s both;
+}
+
+.gauge-svg {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.gauge-fill {
+    transition: stroke-dasharray 1s ease-out, stroke 0.5s ease-out;
+}
+
+.gauge-value {
+    text-align: center;
+    margin-top: -2rem;
+}
+
+.gauge-percentage {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background: var(--gradient-primary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    animation: fadeIn 0.6s ease-out 0.6s both;
+}
+
+.gauge-label {
+    font-size: 0.875rem;
+    color: var(--text-secondary);
+    margin-top: 0.5rem;
+}
+
+@media (max-width: 768px) {
+    .gauge-percentage {
+        font-size: 2rem;
+    }
+}

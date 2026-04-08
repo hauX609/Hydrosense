@@ -1,0 +1,11 @@
+# Requirements for geospatial data analysis project
+pandas
+xarray
+geopandas
+rioxarray
+rasterio
+numpy
+scipy
+netCDF4
+h5netcdf
+httpx==0.25.2

@@ -1,0 +1,15 @@
+{
+  "lat": 23.8103,
+  "lon": 90.4125,
+  "date": 180,
+  "elevation": 10.5,
+  "slope": 0.5,
+  "landcover": 11,
+  "precip_1d": 50.0,
+  "precip_3d": 120.0,
+  "precip_7d": 200.0,
+  "precip_14d": 300.0,
+  "dis_last": 1500.0,
+  "dis_trend_3": 100.0,
+  "dayofyear": 180
+}
