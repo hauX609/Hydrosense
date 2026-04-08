@@ -72,6 +72,8 @@ htmlcov/
 *.bak
 *.swp
 .cache/
+.history/
+*.db
 
 # OS
 Thumbs.db

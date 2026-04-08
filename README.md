@@ -15,11 +15,13 @@ The Bangladesh Flood Predictor is a comprehensive web application that combines 
 ## ✨ Features
 
 ### 🗺️ Interactive Map
+
 - Click-to-select location on OpenStreetMap
 - Real-time coordinate updates
 - Visual marker for selected location
 
 ### 🌤️ Live Weather Data
+
 - Fetches current weather conditions from Open-Meteo API
 - Automatic form population with:
   - Elevation data
@@ -27,6 +29,7 @@ The Bangladesh Flood Predictor is a comprehensive web application that combines 
 - One-click data retrieval
 
 ### 📊 Historical Weather Trends
+
 - 30-day weather visualization
 - Dual-axis chart showing:
   - Precipitation (mm)
@@ -35,12 +38,14 @@ The Bangladesh Flood Predictor is a comprehensive web application that combines 
 - Automatic form population from selected dates
 
 ### 🤖 AI-Powered Predictions
+
 - CatBoost machine learning model
 - Three-tier risk classification (Low/Medium/High)
 - Confidence scoring
 - Visual risk gauge with color coding
 
 ### 🎨 Modern UI/UX
+
 - Glassmorphism design
 - Smooth animations and transitions
 - Responsive layout
@@ -83,39 +88,46 @@ Bangladesh_Flood_Project/
 ### Backend Setup
 
 1. Navigate to the backend directory:
+
 ```bash
 cd backend
 ```
 
 2. Install Python dependencies:
+
 ```bash
 pip install -r requirements.txt
 ```
 
 3. Start the FastAPI server:
+
 ```bash
 uvicorn app.main:app --reload
 ```
 
 The backend will be available at `http://localhost:8000`
 
-**API Documentation**: 
+**API Documentation**:
+
 - Swagger UI: `http://localhost:8000/docs`
 - ReDoc: `http://localhost:8000/redoc`
 
 ### Frontend Setup
 
 1. Navigate to the frontend directory:
+
 ```bash
 cd frontend
 ```
 
 2. Install Node dependencies:
+
 ```bash
 npm install
 ```
 
 3. Start the development server:
+
 ```bash
 npm run dev
 ```
@@ -124,13 +136,13 @@ The frontend will be available at `http://localhost:5174`
 
 ## 📡 API Endpoints
 
-| Endpoint | Method | Description |
-|----------|--------|-------------|
-| `/predict` | POST | Get flood risk prediction |
-| `/weather/live` | GET | Fetch live weather data |
-| `/weather/history` | GET | Get 30-day historical data |
-| `/health` | GET | Health check |
-| `/model/info` | GET | Model metadata |
+| Endpoint           | Method | Description                |
+| ------------------ | ------ | -------------------------- |
+| `/predict`         | POST   | Get flood risk prediction  |
+| `/weather/live`    | GET    | Fetch live weather data    |
+| `/weather/history` | GET    | Get 30-day historical data |
+| `/health`          | GET    | Health check               |
+| `/model/info`      | GET    | Model metadata             |
 
 ### Example Request
 
@@ -168,6 +180,7 @@ curl -X POST "http://localhost:8000/predict" \
 ## 🛠️ Technology Stack
 
 ### Backend
+
 - **FastAPI**: Modern, fast web framework
 - **CatBoost**: Gradient boosting ML library
 - **HTTPX**: Async HTTP client
@@ -175,6 +188,7 @@ curl -X POST "http://localhost:8000/predict" \
 - **Uvicorn**: ASGI server
 
 ### Frontend
+
 - **React 19**: UI library
 - **TypeScript**: Type-safe JavaScript
 - **Vite**: Build tool
@@ -184,6 +198,7 @@ curl -X POST "http://localhost:8000/predict" \
 - **Lucide React**: Icon library
 
 ### External APIs
+
 - **Open-Meteo**: Weather data API
 
 ## 📊 Model Information
@@ -191,12 +206,14 @@ curl -X POST "http://localhost:8000/predict" \
 The flood prediction model is a CatBoost classifier trained on historical flood data from Bangladesh.
 
 **Input Features** (13):
+
 - Geographic: `lat`, `lon`, `date`, `dayofyear`
 - Terrain: `elevation`, `slope`, `landcover`
 - Precipitation: `precip_1d`, `precip_3d`, `precip_7d`, `precip_14d`
 - River discharge: `dis_last`, `dis_trend_3`
 
 **Output**:
+
 - Flood probability (0-1)
 - Risk level (Low/Medium/High)
 - Binary prediction (flood/no flood)
@@ -216,6 +233,7 @@ The flood prediction model is a CatBoost classifier trained on historical flood 
 ### Backend Configuration
 
 Edit `backend/app/config.py` to customize:
+
 - CORS origins
 - Risk thresholds
 - Model paths
@@ -224,6 +242,7 @@ Edit `backend/app/config.py` to customize:
 ### Frontend Configuration
 
 Edit `frontend/vite.config.ts` for:
+
 - Development server port
 - Build optimizations
 - Dependency pre-bundling
@@ -247,21 +266,27 @@ Edit `frontend/vite.config.ts` for:
 
 ## 🤝 Contributing
 
-Contributions are welcome! Please feel free to submit a Pull Request.
+Contributions are welcome.
 
-1. Fork the repository
-2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+- Read `CONTRIBUTING.md` for workflow and PR expectations.
+- Use the issue templates for bug reports and feature requests.
+- Use the pull request template when submitting changes.
 
 ## 📝 License
 
-This project is licensed under the MIT License.
+This project is licensed under the MIT License. See `LICENSE`.
+
+## 🔐 Security
+
+Please review `SECURITY.md` for vulnerability reporting instructions.
+
+## 📜 Code of Conduct
+
+Please review `CODE_OF_CONDUCT.md` before participating in discussions and contributions.
 
 ## 👥 Authors
 
-- **Your Name** - Initial work
+- Maintained by the Hydrosense contributors.
 
 ## 🙏 Acknowledgments
 
@@ -271,7 +296,7 @@ This project is licensed under the MIT License.
 
 ## 📧 Contact
 
-For questions or support, please open an issue on GitHub.
+For questions or support, please open a GitHub issue.
 
 ---
 
